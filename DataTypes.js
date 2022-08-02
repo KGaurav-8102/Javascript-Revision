@@ -35,3 +35,8 @@ console.log(`Hello${user}`);
 let isGreater = 4 > 1;
 
 console.log(isGreater);
+
+//undefined
+
+let age;
+console.log(age);
