@@ -16,3 +16,11 @@ console.log(typeof str); // string
 let num = Number(str); // becomes a number 123
 
 console.log(typeof num); // number
+
+//Boolean Conversion
+
+console.log( Boolean(1) ); // true
+console.log( Boolean(0) ); // false
+
+console.log( Boolean("hello") ); // true
+console.log( Boolean("") ); // false
