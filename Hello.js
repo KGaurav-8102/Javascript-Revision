@@ -1,3 +1,3 @@
-//Statements are syntax constructs and commands that perform actions.
+//variable
 
-console.log('Hello world');
+let gaurav;
