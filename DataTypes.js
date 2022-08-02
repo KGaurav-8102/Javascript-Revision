@@ -29,3 +29,9 @@ console.log(str3);
 let user = "john";
 
 console.log(`Hello${user}`);
+
+//Boolean value
+
+let isGreater = 4 > 1;
+
+console.log(isGreater);
