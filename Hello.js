@@ -9,3 +9,10 @@ let gaurav;
 
  let user = 'john', age = 25, message = 'hello';
 
+ //we can also declare variavble with symbols
+
+ let $ = 1;
+ let _ = 2;
+
+ console.log($ + _);
+
