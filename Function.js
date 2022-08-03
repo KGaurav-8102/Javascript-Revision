@@ -1,7 +1,8 @@
 //Declaring a Function
 
 function showMessage() {
-    console.log("Hello World")
+    let message = "Hello I am Gaurav Yadav!";
+    console.log(message);
 }
 
 showMessage();
