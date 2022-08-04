@@ -110,7 +110,7 @@ let gk = {
  let id = Symbol("id");
 
  mob[id] = 1;
- 
+
 
  console.log(mob[1]);
 
@@ -120,3 +120,20 @@ let gk = {
 
 console.log( Symbol.keyFor(sym) ); // name
 console.log( Symbol.keyFor(sym2) );
+
+//Type conversion symbol.toPrimitive
+
+let userin = {
+    name: "John",
+    money: 1000,
+  
+    [Symbol.toPrimitive](hint) {
+      console.log(`hint: ${hint}`);
+      return hint == "string" ? `{name: "${this.name}"}` : this.money;
+    }
+  };
+  
+  // conversions demo:
+  console.log(userin); // hint: string -> {name: "John"}
+  console.log(+userin); // hint: number -> 1000
+  console.log(userin + 500); 
