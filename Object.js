@@ -110,5 +110,13 @@ let gk = {
  let id = Symbol("id");
 
  mob[id] = 1;
+ 
 
  console.log(mob[1]);
+
+ //Global Symbols
+ let sym = Symbol.for("name");
+ let sym2 = Symbol.for("id");
+
+console.log( Symbol.keyFor(sym) ); // name
+console.log( Symbol.keyFor(sym2) );
