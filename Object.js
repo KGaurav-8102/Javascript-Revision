@@ -88,4 +88,27 @@ let gk = {
   }
 
  gautam.sayHi();
- 
+ //OPtional Chaining
+
+ let key = "firstName";
+
+ let user2 = {
+    firstName: "John",
+ };
+
+ let user3 = null;
+
+ console.log(user2?.[key]);
+ console.log(user3?.[key]);
+
+ //Symbol
+
+ let mob = {
+    name: 'Redmi 10 Prime',
+ };
+
+ let id = Symbol("id");
+
+ mob[id] = 1;
+
+ console.log(mob[1]);
