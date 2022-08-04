@@ -74,3 +74,18 @@ let gk = {
   // user and clone share sizes
   gk.sizes.width++;       // change a property from one place
   console.log(clones.sizes.width);
+
+  //Object Method this
+  
+  let gautam = {
+    name: 'Gaurav',
+    age: 20,
+
+    sayHi() {
+        console.log(this.name);
+    }
+
+  }
+
+ gautam.sayHi();
+ 
